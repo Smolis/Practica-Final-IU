@@ -10,7 +10,7 @@ body {
 .container {
 	width:960px;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 0 px 0;
 }
 
 
@@ -225,7 +225,7 @@ label.mobile_menu span {
 	border:none;
 	background-color: #2b5978;
 	font-size: 14px;
-	border: 2px solid hsl(168, 76%, 36%), 76%, 36%);
+	border: 1px solid #264f6a;
 }
 
 .nav > li  input:focus {

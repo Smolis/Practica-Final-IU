@@ -4,12 +4,16 @@
 <head>
     <title>Steam</title>
     <meta charset="utf8">
-    <link rel="stylesheet" href="navbar_techandall.css"> <!-- Navigation CSS -->
+    <link rel="stylesheet" href="navbar_techandall.css">
+    <!-- Navigation CSS -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+
 </head>
-    
+
 <body>
+    <div>
+        <img src="imagenes/barraSup.JPG">
+    </div>
     <div class="container">
         <div>
             <label class="mobile_menu" for="mobile_menu">
@@ -17,12 +21,7 @@
             </label>
             <input id="mobile_menu" type="checkbox">
             <ul class="nav">
-                <li>
-                    <a href="#">
-                        <i class="icon-home icon-large"></i>
-                    </a>
-                </li>
-
+                
 
                 <!----- Full Drop Down Name ---->
                 <li class="dropdown">
@@ -33,7 +32,18 @@
 
                     <div class="fulldrop">
                         <div class="column">
-                                <h3>General</h3>
+                            <h3>Inicio</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Ir a la tienda</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    <div class="fulldrop">
+                        <div class="column">
+                            <h3>General</h3>
                             <ul>
                                 <li>
                                     <a href="#">Ver etiquetas populares</a>
@@ -300,34 +310,34 @@
 
                 <!----- Full Drop Down Name ---->
                 <li class="dropdown">
-                        <a href="#">Plataformas</a>
-                        <!----- Full Drop Down Name Ends Here ---->
-    
-                        <!----- Full Drop Down Contents  Starts Here---->
-    
-                        <div class="fulldrop">
-                            <div class="column">
-                                <h3>General</h3>
-                                <ul>
-                                    <li>
-                                        <a href="#">SteamOS + Linux</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">MacOS</a>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
+                    <a href="#">Plataformas</a>
+                    <!----- Full Drop Down Name Ends Here ---->
+
+                    <!----- Full Drop Down Contents  Starts Here---->
+
+                    <div class="fulldrop">
+                        <div class="column">
+                            <h3>General</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">SteamOS + Linux</a>
+                                </li>
+                                <li>
+                                    <a href="#">MacOS</a>
+                                </li>
+
+                            </ul>
                         </div>
-                    </li>
-                    <!----- Full Drop Down Contents  Ends  Here---->
+                    </div>
+                </li>
+                <!----- Full Drop Down Contents  Ends  Here---->
 
 
                 <!----- Search Form Starts---->
                 <li class="search">
                     <form action="Search.php">
                         <i class="icon-search icon-large"></i>
-                        <input type="text" value = "Buscar en la tienda">
+                        <input type="text" value="Buscar en la tienda">
                     </form>
                 </li>
                 <!----- Search Form Ends ---->
