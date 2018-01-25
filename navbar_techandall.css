@@ -7,12 +7,33 @@ body {
 	margin: 0;
 }
 
+.boton-verde{
+    font-size:10px;
+    font-family:Verdana,Helvetica;
+    color:white;
+	background:#4d9900;
+	border: #4d9900;      
+}
+
+#botonesArriba{
+	margin-right:4%;
+}
+
+#barraSup{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #171a21;
+}
 .container {
 	width:960px;
 	margin: 0 auto;
 	padding: 0 px 0;
 }
 
+a{
+	color:white;
+}
 
 label.mobile_menu span {
 	margin-left: 10px;
