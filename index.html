@@ -8,44 +8,68 @@
     <link rel="stylesheet" href="navbar_techandall.css">
     <!-- Navigation CSS -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-    
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <br>
+    <script type="text/javascript">//<![CDATA[
+        $(function () {
+            $('#slider div:gt(0)').hide();
+            setInterval(function () {
+                $('#slider div:first-child').fadeOut(0)
+                    .next('div').fadeIn(1000)
+                    .end().appendTo('#slider');
+            }, 4000);
+        });
+        //]]></script>
+    <script type="text/javascript">//<![CDATA[
+        $(function () {
+            $('#slider2 div:gt(0)').hide();
+            setInterval(function () {
+                $('#slider2 div:first-child').fadeOut(0)
+                    .next('div').fadeIn(1000)
+                    .end().appendTo('#slider2');
+            }, 4000);
+        });
+        //]]></script>
+
 
 </head>
 
 <body>
-    <div id = "barraSup">
-       <img src = "imagenes/header_logo.png" height="80">
-       <div id = "botonesArriba">
-           <p><button type="button" class="boton-verde">Instalar Steam</button> <a href="#">Iniciar sesión</a> <a>|</a> <a href="#">Idioma</a>    </p>        
-       </div>
+    <div id="barraSup">
+        <img src="imagenes/header_logo.png" height="80">
+        <div id="botonesArriba">
+            <p>
+                <button type="button" class="boton-verde">Instalar Steam</button>
+                <a href="#">Iniciar sesión</a>
+                <a>|</a>
+                <a href="#">Idioma</a>
+            </p>
+        </div>
     </div>
-    <div class="container">
-        <div>
-            <label class="mobile_menu" for="mobile_menu">
-                <span>Menu</span>
-            </label>
-            <input id="mobile_menu" type="checkbox">
-            <ul class="nav">
-                
 
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Tu tienda</a>
-                    <!----- Full Drop Down Name Ends Here ---->
+    <div>
+        <label class="mobile_menu" for="mobile_menu">
+            <span>Menu</span>
+        </label>
+        <input id="mobile_menu" type="checkbox">
+        <ul class="nav">
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Tu tienda</a>
+                <!----- Full Drop Down Name Ends Here ---->
 
-                    <!----- Full Drop Down Contents  Starts Here---->
+                <!----- Full Drop Down Contents  Starts Here---->
 
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>Inicio</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Ir a la tienda</a>
-                                </li>
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>Inicio</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Ir a la tienda</a>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
 
                     <div class="fulldrop">
                         <div class="column">
@@ -83,277 +107,354 @@
                         </div>
 
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
 
 
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Juegos</a>
-                    <!----- Full Drop Down Name Ends Here ---->
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Juegos</a>
+                <!----- Full Drop Down Name Ends Here ---->
 
-                    <!----- Full Drop Down Contents  Starts Here---->
+                <!----- Full Drop Down Contents  Starts Here---->
 
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>General</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Free to play</a>
-                                </li>
-                                <li>
-                                    <a href="#">Educación</a>
-                                </li>
-                                <li>
-                                    <a href="#">Demos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Realidad virtual</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="column">
-                            <h3>Géneros de juegos</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Acción</a>
-                                </li>
-                                <li>
-                                    <a href="#">Aventura</a>
-                                </li>
-                                <li>
-                                    <a href="#">Carreras</a>
-                                </li>
-                                <li>
-                                    <a href="#">Casual</a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="column">
-                            <h3></h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Deportes</a>
-                                </li>
-                                <li>
-                                    <a href="#">Estrategia</a>
-                                </li>
-                                <li>
-                                    <a href="#">Indie</a>
-                                </li>
-                                <li>
-                                    <a href="#">Rol</a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="column">
-                            <h3></h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Multijugador masivo</a>
-                                </li>
-                                <li>
-                                    <a href="#">Simuladores</a>
-                                </li>
-
-                            </ul>
-                        </div>
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>General</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Free to play</a>
+                            </li>
+                            <li>
+                                <a href="#">Educación</a>
+                            </li>
+                            <li>
+                                <a href="#">Demos</a>
+                            </li>
+                            <li>
+                                <a href="#">Realidad virtual</a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
 
-
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Software</a>
-                    <!----- Full Drop Down Name Ends Here ---->
-
-                    <!----- Full Drop Down Contents  Starts Here---->
-
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>General</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Publicación web</a>
-                                </li>
-                                <li>
-                                    <a href="#">Animación y modelado</a>
-                                </li>
-                                <li>
-                                    <a href="#">Diseño e ilustración</a>
-                                </li>
-                                <li>
-                                    <a href="#">Video producción</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="column">
-                            <h3></h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Desarrollo de videojuegos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Edición fotográfica</a>
-                                </li>
-                                <li>
-                                    <a href="#">Producción de audio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Compatibilidad con Steam Controller</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="column">
+                        <h3>Géneros de juegos</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Acción</a>
+                            </li>
+                            <li>
+                                <a href="#">Aventura</a>
+                            </li>
+                            <li>
+                                <a href="#">Carreras</a>
+                            </li>
+                            <li>
+                                <a href="#">Casual</a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
 
 
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Hardware</a>
-                    <!----- Full Drop Down Name Ends Here ---->
-
-                    <!----- Full Drop Down Contents  Starts Here---->
-
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>General</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Steam Controller</a>
-                                </li>
-                                <li>
-                                    <a href="#">Steam Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Steam Machines</a>
-                                </li>
-                                <li>
-                                    <a href="#">HTC Vive</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="column">
+                        <h3></h3>
+                        <ul>
+                            <li>
+                                <a href="#">Deportes</a>
+                            </li>
+                            <li>
+                                <a href="#">Estrategia</a>
+                            </li>
+                            <li>
+                                <a href="#">Indie</a>
+                            </li>
+                            <li>
+                                <a href="#">Rol</a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
 
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Videos</a>
-                    <!----- Full Drop Down Name Ends Here ---->
 
-                    <!----- Full Drop Down Contents  Starts Here---->
+                    <div class="column">
+                        <h3></h3>
+                        <ul>
+                            <li>
+                                <a href="#">Multijugador masivo</a>
+                            </li>
+                            <li>
+                                <a href="#">Simuladores</a>
+                            </li>
 
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>Explorar por género</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Acción</a>
-                                </li>
-                                <li>
-                                    <a href="#">Anime</a>
-                                </li>
-                                <li>
-                                    <a href="#">Humor</a>
-                                </li>
-                                <li>
-                                    <a href="#">Drama</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terror</a>
-                                </li>
-                                <li>
-                                    <a href="#">Ciencia ficción</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="column">
-                            <h3>Explorar por tipo</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Película</a>
-                                </li>
-                                <li>
-                                    <a href="#">Episodic</a>
-                                </li>
-                                <li>
-                                    <a href="#">Documental</a>
-                                </li>
-                                <li>
-                                    <a href="#">Gaming</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorial</a>
-                                </li>
-                                <li>
-                                    <a href="#">Corto</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="column">
-                            <h3>Realidad virtual</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Realidad virtual</a>
-                                </li>
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
+                </div>
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
 
-                <!----- Full Drop Down Name ---->
-                <li class="dropdown">
-                    <a href="#">Plataformas</a>
-                    <!----- Full Drop Down Name Ends Here ---->
 
-                    <!----- Full Drop Down Contents  Starts Here---->
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Software</a>
+                <!----- Full Drop Down Name Ends Here ---->
 
-                    <div class="fulldrop">
-                        <div class="column">
-                            <h3>General</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">SteamOS + Linux</a>
-                                </li>
-                                <li>
-                                    <a href="#">MacOS</a>
-                                </li>
+                <!----- Full Drop Down Contents  Starts Here---->
 
-                            </ul>
-                        </div>
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>General</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Publicación web</a>
+                            </li>
+                            <li>
+                                <a href="#">Animación y modelado</a>
+                            </li>
+                            <li>
+                                <a href="#">Diseño e ilustración</a>
+                            </li>
+                            <li>
+                                <a href="#">Video producción</a>
+                            </li>
+                        </ul>
                     </div>
-                </li>
-                <!----- Full Drop Down Contents  Ends  Here---->
+
+                    <div class="column">
+                        <h3></h3>
+                        <ul>
+                            <li>
+                                <a href="#">Desarrollo de videojuegos</a>
+                            </li>
+                            <li>
+                                <a href="#">Edición fotográfica</a>
+                            </li>
+                            <li>
+                                <a href="#">Producción de audio</a>
+                            </li>
+                            <li>
+                                <a href="#">Compatibilidad con Steam Controller</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
 
 
-                <!----- Search Form Starts---->
-                <li class="search">
-                    <form action="Search.php">
-                        <i class="icon-search icon-large"></i>
-                        <input type="text" value="Buscar en la tienda">
-                    </form>
-                </li>
-                <!----- Search Form Ends ---->
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Hardware</a>
+                <!----- Full Drop Down Name Ends Here ---->
+
+                <!----- Full Drop Down Contents  Starts Here---->
+
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>General</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Steam Controller</a>
+                            </li>
+                            <li>
+                                <a href="#">Steam Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Steam Machines</a>
+                            </li>
+                            <li>
+                                <a href="#">HTC Vive</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
+
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Videos</a>
+                <!----- Full Drop Down Name Ends Here ---->
+
+                <!----- Full Drop Down Contents  Starts Here---->
+
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>Explorar por género</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Acción</a>
+                            </li>
+                            <li>
+                                <a href="#">Anime</a>
+                            </li>
+                            <li>
+                                <a href="#">Humor</a>
+                            </li>
+                            <li>
+                                <a href="#">Drama</a>
+                            </li>
+                            <li>
+                                <a href="#">Terror</a>
+                            </li>
+                            <li>
+                                <a href="#">Ciencia ficción</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>Explorar por tipo</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Película</a>
+                            </li>
+                            <li>
+                                <a href="#">Episodic</a>
+                            </li>
+                            <li>
+                                <a href="#">Documental</a>
+                            </li>
+                            <li>
+                                <a href="#">Gaming</a>
+                            </li>
+                            <li>
+                                <a href="#">Tutorial</a>
+                            </li>
+                            <li>
+                                <a href="#">Corto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>Realidad virtual</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Realidad virtual</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
+
+            <!----- Full Drop Down Name ---->
+            <li class="dropdown">
+                <a href="#">Plataformas</a>
+                <!----- Full Drop Down Name Ends Here ---->
+
+                <!----- Full Drop Down Contents  Starts Here---->
+
+                <div class="fulldrop">
+                    <div class="column">
+                        <h3>General</h3>
+                        <ul>
+                            <li>
+                                <a href="#">SteamOS + Linux</a>
+                            </li>
+                            <li>
+                                <a href="#">MacOS</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!----- Full Drop Down Contents  Ends  Here---->
 
 
-            </ul>
+            <!----- Search Form Starts---->
+            <li class="search">
+                <form action="Search.php">
+                    <i class="icon-search icon-large"></i>
+                    <input type="text" value="Buscar en la tienda">
+                </form>
+            </li>
+            <!----- Search Form Ends ---->
+
+        </ul>
+
         </div>
-    </div>
-</body>
+        <!--CUERPO DE LA PAGINA -->
+        <div id="destacados" class="container">
+            <h2>DESTACADOS Y RECOMENDADOS</h2>
+            <div id="slider">
+                <div>
+                    <img src="imagenes/billions.jpg" />
+                </div>
+                <div>
+                    <img src="imagenes/counter.jpg" />
+                </div>
+                <div>
+                    <img src="imagenes/darkwood.jpg" />
+                </div>
+                <div>
+                    <img src="imagenes/gta.jpg" />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="destacados" class="container">
+            <h2>OFERTAS ESPECIALES</h2>
+            <div id="slider2">
+                <div>
+                    <img src="imagenes/oferta1.png" />
+                </div>
+                <div>
+                    <img src="imagenes/oferta2.png" />
+                </div>
+            </div>
+        </div>
 
+        <hr>
+
+        <div id="explorar" class="container">
+            <h2>EXPLORAR STEAM</h2>
+            <div id = "botonesExp">
+            <button type="button" class="boton-azul">Novedades</button>
+            <button type="button" class="boton-azul">Especiales</button>
+            <button type="button" class="boton-azul">Juegos gratuitos</button>
+            <button type="button" class="boton-azul">Por etiquetas de usuarios</button>
+            </div>
+        </div>
+
+<!-- FOOTER -->
+<div id="footer">
+    <div id="columna">
+        <h3>Comunidad</h3>
+        <a href="#">Inicio</a>
+        <a href="#">Discusiones</a>
+        <a href="#">Workshop</a>
+        <a href="#">Mercado</a>
+        <a href="#">Restransmisiones</a>
+    </div>
+    <div id="columna">
+        <h3>Acerca de Steam</h3>
+        <a href="#">¿Qué es Steam?</a>
+        <a href="#">La comunidad Steam</a>
+        <a href="#">Regalar en Steam</a>
+    </div>
+    <div id="columna">
+        <h3>Acerca de Valve</h3>
+        <a href="#">¿Qué es Valve?</a>
+        <a href="#">Soluciones para empresas</a>
+        <a href="#">Steamworks</a>
+        <a href="#">Empleo</a>
+    </div>
+    <div id="columna">
+        <h3>Ayuda</h3>
+        <a href="#">Soporte</a>
+        <a href="#">Foros</a>
+        <a href="#">Estadísticas</a>
+    </div>
+    <div id="columna">
+        <h3>Suscripciones</h3>
+        <a href="#">Noticias de Steam</a>
+        <a href="#">Nuevos lanzamientos</a>
+        <a href="#">Ofertas diarias</a>
+    </div>
+</div>
+</body>
 </html>
 
 </html>

@@ -6,6 +6,24 @@ body {
 	padding:0;
 	margin: 0;
 }
+	
+#slider { 
+	position: relative;
+	overflow: hidden;
+	width: 938px; 
+	height: 350px; 
+	margin: 0 auto;
+	padding: 0;
+}
+
+#slider2 { 
+	position: relative;
+	overflow: hidden;
+	width: 938px; 
+	height: 386px; 
+	margin: 0 auto;
+	padding: 0;
+}
 
 .boton-verde{
     font-size:10px;
@@ -13,6 +31,19 @@ body {
     color:white;
 	background:#4d9900;
 	border: #4d9900;      
+}
+
+.boton-azul{
+    font-size:20px;
+	font-family:Verdana,Helvetica;
+	padding: 10px 10px 10px 10px;
+    color:white;
+	background:#227ea5;
+	border: 1px;	      
+}
+
+.boton-azul:hover{
+	background: #2589b3;
 }
 
 #botonesArriba{
@@ -24,6 +55,35 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background: #171a21;
+}
+
+#footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	background: #171a21;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom:1%;
+}
+
+a{
+	font-size:12px;
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+	color: #e3e4e7;
+}
+
+#footer h3{
+	color:white;
+}
+
+#columna{
+	display:flex;
+	flex-direction: column;
 }
 .container {
 	width:960px;
@@ -42,7 +102,6 @@ label.mobile_menu span {
 }
 
 .nav {
- 
 	font-family: 'Orienta', sans-serif; 
 	font-weight: 400; /* 400 thinner */
 	font-size: 13px;
@@ -51,9 +110,9 @@ label.mobile_menu span {
  
 	position: relative;
 	padding: 0 0 0 4px; /* Fix for inline-block spacing*/
+	padding-right: 20px;
+	padding-left: 20px;
 	margin: 0;
-
- 
     background-color: #367096;
 }
 
@@ -261,3 +320,21 @@ label.mobile_menu span {
 	color: #fff;
 	font-size: 17px;
 }
+
+#destacados{
+	margin-bottom: 1%;
+}
+#destacados h2{
+	margin-left: 1.5%;
+}
+
+#explorar{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3%;
+}
+
+#explorar h2{
+	margin-left: 1.5%;
+}
+
