@@ -1,10 +1,21 @@
 /* Basic Style */
+@font-face{
+    font-family: "Quicksand_Dash";
+    src: url(fonts/quicksand/Quicksand_Dash.ttf) format("truetype");
+}
+
 body {
-	font-family: 'Orienta', sans-serif;
-	color: #252525;
+	font-family: "Quicksand_Dash";
+	color: white;
 	position: relative;
 	padding:0;
 	margin: 0;
+	background-image: url("imagenes/body_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
 }
 	
 #slider { 
@@ -68,7 +79,7 @@ body {
 }
 
 a{
-	font-size:12px;
+	font-size:15px;
     text-decoration: none;
     color:white;
 }
@@ -102,8 +113,8 @@ label.mobile_menu span {
 }
 
 .nav {
-	font-family: 'Orienta', sans-serif; 
-	font-weight: 400; /* 400 thinner */
+	font-family: "Quicksand_Dash";
+	/*font-weight: 400; /* 400 thinner */
 	font-size: 13px;
 	line-height: 13px;
 
@@ -113,7 +124,7 @@ label.mobile_menu span {
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0;
-    background-color: #367096;
+    background-image: linear-gradient(#171A21, #171A21 40%, #2B5978);
 }
 
 
@@ -141,7 +152,7 @@ label.mobile_menu span {
 }
 
 .nav > li:hover {
-	background-color: #2b5978;
+	background-image: linear-gradient(#171A21, #171A21 40%, #2B5978);
 }
 
 
@@ -299,13 +310,16 @@ label.mobile_menu span {
 
 
 .nav > li  input {
+	font-family: "Quicksand_Dash";
 	padding: 7px 6px 6px 38px;
 	margin: 0 5px;
 	color:#fff;
 	border:none;
-	background-color: #2b5978;
+	background: none;
+	/*background-color: #2b5978;*/
+	/*background-image: linear-gradient(#2B5978, #2B5978 40%, #171A21);*/
 	font-size: 14px;
-	border: 1px solid #264f6a;
+	border: 1px solid white;
 }
 
 .nav > li  input:focus {
@@ -326,6 +340,10 @@ label.mobile_menu span {
 }
 #destacados h2{
 	margin-left: 1.5%;
+}
+
+.list-content{
+	float: right;
 }
 
 
