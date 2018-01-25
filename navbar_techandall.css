@@ -328,13 +328,4 @@ label.mobile_menu span {
 	margin-left: 1.5%;
 }
 
-#explorar{
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 3%;
-}
-
-#explorar h2{
-	margin-left: 1.5%;
-}
 
