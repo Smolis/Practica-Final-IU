@@ -319,7 +319,7 @@ label.mobile_menu span {
 	/*background-color: #2b5978;*/
 	/*background-image: linear-gradient(#2B5978, #2B5978 40%, #171A21);*/
 	font-size: 14px;
-	border: 1px solid white;
+	/*border-bottom: 1px solid white;*/
 }
 
 .nav > li  input:focus {
