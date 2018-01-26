@@ -1,11 +1,12 @@
 /* Basic Style */
 @font-face{
-    font-family: "Quicksand_Dash";
-    src: url(fonts/quicksand/Quicksand_Dash.ttf) format("truetype");
+    font-family: "Letters_for_Learners";
+    src: url(fonts/letters/Letters_for_Learners.ttf) format("truetype");
 }
 
 body {
-	font-family: "Quicksand_Dash";
+	font-family: "Letters_for_Learners";
+	font-size: 20px;
 	color: white;
 	position: relative;
 	padding:0;
@@ -35,23 +36,32 @@ body {
 	margin: 0 auto;
 	padding: 0;
 }
-
+#divBtn{
+	display:flex;
+	align-items:center;
+}
+button:hover{
+	background: #69cd04;
+}
 .boton-verde{
-    font-size:10px;
-    font-family:Verdana,Helvetica;
+	font-family: "Letters_for_Learners";
+	display: block;
+	align-items:center;
+    font-size:23px;
     color:white;
 	background:#4d9900;
 	border: #4d9900;      
 }
 
-.boton-azul{
-    font-size:20px;
-	font-family:Verdana,Helvetica;
-	padding: 10px 10px 10px 10px;
-    color:white;
-	background:#227ea5;
-	border: 1px;	      
+#disponibles{
+	font-size: 20px;
+
 }
+
+a:hover{
+	color: #227ea5;
+}
+
 
 .boton-azul:hover{
 	background: #2589b3;
@@ -61,11 +71,19 @@ body {
 	margin-right:4%;
 }
 
+hr{
+	
+}
+
 #barraSup{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: #171a21;
+}
+
+#barraSup a{
+	font-size: 23px;
 }
 #listaLateral{
 	list-style:none;
@@ -95,9 +113,7 @@ a{
     color:white;
 }
 
-a:hover{
-	color: #e3e4e7;
-}
+
 
 #footer h3{
 	color:white;
@@ -124,18 +140,19 @@ label.mobile_menu span {
 }
 
 .nav {
-	font-family: "Quicksand_Dash";
+	font-family: "Letters_for_Learners";
 	/*font-weight: 400; /* 400 thinner */
-	font-size: 13px;
-	line-height: 13px;
-
- 
+	line-height: 15px;
 	position: relative;
 	padding: 0 0 0 4px; /* Fix for inline-block spacing*/
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0;
     background-image: linear-gradient(#171A21, #171A21 5%, #2B5978);
+}
+
+.nav a{
+	font-size: 20px;
 }
 
 .nav h3{
@@ -148,6 +165,7 @@ label.mobile_menu span {
 
 
 .nav > li {
+	font-size: 15px;
 	display: inline-block;
 	text-align: center;
 	margin-left: -4px; /* For the inline-block spacing */
@@ -193,7 +211,7 @@ label.mobile_menu span {
 
 
 .nav li > ul li {
-	font-size: 11px;
+	font-size: 16 px;
 	position: relative;
 	display: block;
 	padding: 15px 10px;
@@ -309,6 +327,7 @@ label.mobile_menu span {
 
 
 .nav > li.search {
+	
 	border:none;
 	-webkit-box-shadow:  none;
     box-shadow:  none;
@@ -323,16 +342,14 @@ label.mobile_menu span {
 
 
 .nav > li  input {
-	font-family: "Quicksand_Dash";
+	font-family: "Letters_for_Learners";
 	padding: 7px 6px 6px 38px;
 	margin: 0 5px;
-	color:#fff;
+	color:white;
+	font-size: 19px;
 	border:none;
 	background: none;
-	/*background-color: #2b5978;*/
-	/*background-image: linear-gradient(#2B5978, #2B5978 40%, #171A21);*/
-	font-size: 14px;
-	/*border-bottom: 1px solid white;*/
+	
 }
 
 .nav > li  input:focus {
@@ -344,8 +361,8 @@ label.mobile_menu span {
 	position: absolute;
 	left: 20px;
 	top:20px;
-	color: #fff;
-	font-size: 17px;
+	color: white;
+	font-size: 19px;
 }
 
 #destacados{
