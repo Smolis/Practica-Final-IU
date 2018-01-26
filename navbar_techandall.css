@@ -67,12 +67,23 @@ body {
 	align-items: center;
 	background: #171a21;
 }
+#listaLateral{
+	list-style:none;
+}
+#cuerpo {
+	display: flex;
+	flex-direction: row;
+}
 
+#panelIz{
+	margin-right: 7%;
+}
 #footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: top;
-	background: #171a21;
+	/*background: #171a21;*/
+	background: black;
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-bottom:1%;
@@ -124,10 +135,12 @@ label.mobile_menu span {
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0;
-    background-image: linear-gradient(#171A21, #171A21 40%, #2B5978);
+    background-image: linear-gradient(#171A21, #171A21 5%, #2B5978);
 }
 
-
+.nav h3{
+	font-size: 20px;
+}
 .nav a, .nav a:link, .nav a:visited, .nav a:hover, .nav a:focus, span {
 	color: #fff;
 	text-decoration: none;
