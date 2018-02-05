@@ -93,6 +93,15 @@ hr{
 	flex-direction: row;
 }
 
+#cuerpoFree{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+
+
 #panelIz{
 	margin-right: 7%;
 }
