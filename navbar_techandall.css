@@ -53,6 +53,22 @@ button:hover{
 	border: #4d9900;      
 }
 
+.boton-azul{
+	font-family: "Letters_for_Learners";
+	display: block;
+	align-items:center;
+    font-size:28px;
+    color:white;
+	background:#2b475e;
+	border: #2b475e; 
+	margin-bottom: 5px;
+}
+
+#botonesFree{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
 #disponibles{
 	font-size: 20px;
 
@@ -71,9 +87,7 @@ a:hover{
 	margin-right:4%;
 }
 
-hr{
-	
-}
+
 
 #barraSup{
 	display: flex;
@@ -91,14 +105,25 @@ hr{
 #cuerpo {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 1%;
 }
-
 #cuerpoFree{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-top: 5%;
+	margin-bottom: 1%;
 }
+
+
+#freeArriba{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	
+}
+
 
 
 
