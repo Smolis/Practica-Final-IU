@@ -64,7 +64,7 @@ button:hover{
 	margin-bottom: 5px;
 }
 
-#botonesFree{
+#lateralFree{
 	display:flex;
 	flex-direction: column;
 	align-items:center;
