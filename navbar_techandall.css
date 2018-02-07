@@ -62,6 +62,11 @@ button:hover{
 	background:#2b475e;
 	border: #2b475e;
 	margin-bottom: 5px;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.boton-azul:hover{
+	transform: scale(1.1);
 }
 
 #lateralFree{
@@ -196,6 +201,7 @@ label.mobile_menu span {
 	color: #fff;
 	text-decoration: none;
 }
+
 
 
 .nav > li {
