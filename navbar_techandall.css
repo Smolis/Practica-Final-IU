@@ -70,10 +70,28 @@ button:hover{
 }
 
 #lateralFree{
+	padding-left: 7rem;
+	padding-right: 7rem;
 	display:flex;
 	flex-direction: column;
 	align-items:center;
+	flex: 0 0 auto;
+	position: relative;
+
 }
+.juego{
+	padding: 17px;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+.juego:hover{
+	transform: scale(1.1);
+
+}
+
+
+
 #disponibles{
 	font-size: 20px;
 
@@ -345,6 +363,11 @@ label.mobile_menu span {
 .nav .column ul li a {
 	display: block;
 	padding: 0 0 15px 0;
+}
+
+
+.column ul li :hover{
+	font-size: 25px;
 }
 
 /* Arrows */
