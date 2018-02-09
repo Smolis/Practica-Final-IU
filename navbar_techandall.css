@@ -119,6 +119,14 @@ a:hover{
 	background: #171a21;
 }
 
+#siguiente{
+	display:flex;
+	justify-content: space-around;
+	
+}
+#siguiente a{
+	font-size: 25px;
+}
 #barraSup a{
 	font-size: 23px;
 }
